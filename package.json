@@ -1,0 +1,24 @@
+{
+  "name": "geojson-server",
+  "version": "1.0.0",
+  "description": "Used for serving geo-json over REST API",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "cd node_modules/geojson-tile-server && npm run-script build",
+    "start": "node ./node_modules/geojson-tile-server/dist/cli.js --data data/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanstan/geojson-server.git"
+  },
+  "author": "Ivan Stanojevic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivanstan/geojson-server/issues"
+  },
+  "homepage": "https://github.com/ivanstan/geojson-server#readme",
+  "dependencies": {
+    "geojson-tile-server": "git+https://github.com/ivanstan/geojson-tile-server.git"
+  }
+}
